@@ -46,7 +46,7 @@ const fadeUp = {
 export default function PortfolioLayout() {
   return (
     <main className="relative min-h-screen overflow-hidden text-rose-950">
-      <header className="sticky top-0 z-50 border-b border-rose-900/10 bg-white/70 backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-rose-900/10 bg-white/70 backdrop-blur-md">
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">
           <a href="#perfil" className="text-sm font-semibold tracking-[0.2em] text-rose-900 uppercase">
             BRITANY
@@ -74,7 +74,7 @@ export default function PortfolioLayout() {
         <div className="absolute bottom-[-180px] right-[-120px] h-[360px] w-[360px] rounded-full bg-rose-400/30 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-28 px-6 pt-24 pb-16 sm:px-10 lg:px-16 lg:pt-28 lg:pb-20">
+      <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-28 px-6 pt-32 pb-16 sm:px-10 lg:px-16 lg:pt-36 lg:pb-20">
         <motion.section {...fadeUp} id="perfil" className="scroll-mt-28">
           <Header
             name="BRITANY VILLALOBOS"
