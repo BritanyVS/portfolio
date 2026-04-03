@@ -41,7 +41,17 @@ export default function CertificadosPage() {
               Cisco Networking Academy - Certificado obtenido al completar el
               curso introductorio de ciberseguridad.
             </p>
-
+            <div className="mt-4 flex items-center justify-between gap-4">
+            <div className="mt-4 overflow-hidden rounded-xl border border-rose-900/10 bg-white/70">
+              <Image
+                src="/C1.png"
+                alt=" Introduction to Cybersecurity"
+                width={100}
+                height={100}
+                className="h-auto max-h-[100px] w-full object-contain"
+                priority
+              />
+            </div>
             <a
               href="https://www.credly.com/badges/89744220-408d-4162-a373-62252131a00e/linked_in?t=tcu3o5"
               target="_blank"
@@ -50,7 +60,40 @@ export default function CertificadosPage() {
             >
               Ver certificado en Credly
             </a>
+            </div>
           </article>
+
+           <article className="rounded-xl border border-rose-900/10 bg-white/60 p-5">
+            <h2 className="text-lg font-medium text-rose-950">
+              Introduction to Data Science
+            </h2>
+            <p className="mt-1 text-sm leading-7 text-rose-800">
+              Cisco Networking Academy - Certificado obtenido al completar el
+              curso introductorio de ciencia de datos.
+            </p>
+            <div className="mt-4 flex items-center justify-between gap-4">
+            <div className="mt-4 overflow-hidden rounded-xl border border-rose-900/10 bg-white/70">
+              <Image
+                src="/C2.png"
+                alt=" Introduction to Data Science"
+                width={100}
+                height={100}
+                className="h-auto max-h-[100px] w-full object-contain"
+                priority
+              />
+            </div>
+            <a
+              href="https://www.credly.com/badges/193d4801-3892-4d9a-83ec-c9a45a64e781/linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center justify-center rounded-lg border border-rose-900/20 bg-white/80 px-4 py-2 text-sm font-medium text-rose-900 transition-colors hover:bg-white"
+            >
+              Ver certificado en Credly
+            </a>
+            </div>
+          </article>
+
+
         </section>
 
         <section className="space-y-4 rounded-2xl border border-rose-900/10 bg-white/35 p-6 backdrop-blur-sm">
