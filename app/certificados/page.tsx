@@ -104,7 +104,7 @@ export default function CertificadosPage() {
             <div className="mt-4 overflow-hidden rounded-xl border border-rose-900/10 bg-white/70">
               <Image
                 src="/EFSET.jpg"
-                alt="Certificado EF SET Ingles"
+                alt="Certificado EF SET Inglés"
                 width={100}
                 height={100}
                 className="h-auto max-h-[100px] w-full object-contain"
