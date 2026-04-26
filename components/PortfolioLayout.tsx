@@ -7,32 +7,27 @@ import ProjectCard, { type Project } from "./ProjectCard";
 
 const projects: Project[] = [
   {
-    name: "Cabaña Coronilla",
-    description:
-      "Sistema de gestion de reservas y administración internal para cabaña, con interfaz intuitiva y funcionalidades completas.",
-    technologies: [".NET 8", "Blazor"],
-    githubUrl: "https://github.com/BritanyVS/Cabana-Coronilla-Project",
-  },
-  {
     name: "Lonjevus",
     description:
       "Plataforma web de alto rendimiento con arquitectura fullstack moderna y escalable.",
     technologies: ["Next.js", ".NET Core"],
-    githubUrl: "https://github.com/BritanyVS/Lonjevus-Project",
+    frontendUrl: "https://github.com/BritanyVS/ProyectoLonjevusFront_2025",
+    backendUrl: "https://github.com/BritanyVS/ProyectoLonjevusBack_2025",
   },
   {
     name: "Brittany Salon",
     description:
       "Aplicacion para servicios de salon con reservas, gestion de clientes y datos estructurados.",
     technologies: ["Next.js", "PostgreSQL"],
-    githubUrl: "https://github.com/BritanyVS/Brittany-Salon-Project",
+    frontendUrl: "https://github.com/BritanyVS/ProyectoBrittanySalonFront_2026",
+    backendUrl: "https://github.com/BritanyVS/ProyectoBrittanySalonBack_2026",
   },
   {
     name: "Pagina Amarilla",
     description:
       "Directorio digital optimizado para busqueda y administracion de contenido con ORM moderno.",
     technologies: ["Next.js", "Prisma"],
-    githubUrl: "https://github.com/pagina-amarilla-guacimo",
+    gitUrl: "https://github.com/orgs/pagina-amarilla-guacimo/repositories",
   },
 ];
 

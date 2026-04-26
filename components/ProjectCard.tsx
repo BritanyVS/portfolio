@@ -6,7 +6,9 @@ export type Project = {
   name: string;
   description: string;
   technologies: string[];
-  githubUrl: string;
+  frontendUrl?: string;
+  backendUrl?: string;
+  gitUrl?: string;
 };
 
 type ProjectCardProps = {
@@ -22,14 +24,38 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       <div className="mb-4 flex items-start justify-between gap-4">
         <h4 className="text-lg font-semibold text-rose-950">{project.name}</h4>
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs tracking-[0.2em] text-rose-700 uppercase transition-colors hover:text-rose-500"
-        >
-          → GitHub
-        </a>
+        <div className="flex flex-wrap items-center gap-2">
+          {project.frontendUrl ? (
+            <a
+              href={project.frontendUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-rose-900/20 bg-white/70 px-3 py-1 text-xs tracking-[0.16em] text-rose-700 uppercase transition-colors hover:border-rose-500/50 hover:text-rose-500"
+            >
+              Front
+            </a>
+          ) : null}
+          {project.backendUrl ? (
+            <a
+              href={project.backendUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-rose-900/20 bg-white/70 px-3 py-1 text-xs tracking-[0.16em] text-rose-700 uppercase transition-colors hover:border-rose-500/50 hover:text-rose-500"
+            >
+              Back
+            </a>
+          ) : null}
+          {project.gitUrl ? (
+            <a
+              href={project.gitUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-rose-900/20 bg-white/70 px-3 py-1 text-xs tracking-[0.16em] text-rose-700 uppercase transition-colors hover:border-rose-500/50 hover:text-rose-500"
+            >
+              Git
+            </a>
+          ) : null}
+        </div>
       </div>
 
       <p className="mb-5 line-clamp-2 text-sm leading-7 text-rose-800 sm:text-base">
